@@ -53,12 +53,13 @@ git chain-sync branch-a branch-b branch-c branch-d
 ### Interactive Flow Example
 
 ```
-git chain-sync main develop feature-a feature-b
+$ git chain-sync branch-a branch-b branch-c branch-d
+
 git chain-sync
 ----------------------------------------------------------------
 
 branch chain:
-  main -> develop -> feature-a -> feature-b
+  branch-a -> branch-b -> branch-c -> branch-d
 
 build check:
   1. npm run build
@@ -74,12 +75,6 @@ merge strategy:
   2. git rebase  (linear history, requires force-push)
   choice [1-2]: 1
   -> using: git merge
-
-auto push to remote?
-  1. yes - push each branch after sync
-  2. no  - sync locally only (no push)
-  choice [1-2]: 1
-  -> will push each branch after sync
 
 ----------------------------------------------------------------
 ready to sync 4 branches. this will push to remote.
