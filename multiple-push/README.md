@@ -37,11 +37,10 @@ What if:
 chmod +x ~/.git-tweaks/multiple-push/multiple-push.sh
 ```
 
-2. Add the git alias to your `~/.gitconfig`:
+2. Add the git alias using the following command:
 
-```ini
-[alias]
-	multiple-push = !bash ~/.git-tweaks/multiple-push/multiple-push.sh
+```bash
+git config --global alias.multiple-push '!bash ~/.git-tweaks/multiple-push/multiple-push.sh'
 ```
 
 ## Usage

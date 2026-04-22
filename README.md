@@ -12,12 +12,11 @@ A collection of custom Git tools to streamline branch management and synchroniza
 ## Installation
 
 1. Clone or download this repository to `~/.git-tweaks/`
-2. Add the following aliases to your `~/.gitconfig`:
+2. Add the git aliases using the following commands:
 
-```ini
-[alias]
-	chain-sync = !bash ~/.git-tweaks/chain-sync/chain-sync.sh
-	multiple-push = !bash ~/.git-tweaks/multiple-push/multiple-push.sh
+```bash
+git config --global alias.chain-sync '!bash ~/.git-tweaks/chain-sync/chain-sync.sh'
+git config --global alias.multiple-push '!bash ~/.git-tweaks/multiple-push/multiple-push.sh'
 ```
 
 3. Make the scripts executable:

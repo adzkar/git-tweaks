@@ -35,11 +35,10 @@ One failed build breaks the entire chain, and you might lose track of which bran
 chmod +x ~/.git-tweaks/chain-sync/chain-sync.sh
 ```
 
-2. Add the git alias to your `~/.gitconfig`:
+2. Add the git alias using the following command:
 
-```ini
-[alias]
-	chain-sync = !bash ~/.git-tweaks/chain-sync/chain-sync.sh
+```bash
+git config --global alias.chain-sync '!bash ~/.git-tweaks/chain-sync/chain-sync.sh'
 ```
 
 ## Usage
